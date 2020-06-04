@@ -303,6 +303,7 @@ app.get('/api/Messages', (req, res) => {
                     };
                     response.push(selected);
                 }
+                console.log("msg count: " + response.length);
                 return response;
             })
             return res.status(200).send(response);
